@@ -15,13 +15,13 @@
         {% for file in filenames %}
           <li><a href="{{url_for('uploaded_file', filename=file)}}">{{file}}</a></li>
         {% endfor %}
-      </ul>
+      </ul> 
       </div>
       <div class="header">
         <h3 class="text-muted">Navigation</h3>
       </div>
       <nav>
-        <a href="/keywordsearch"><h5>Key Word Search</h5></a> 
+	      <a href="/wordcloud"><h5>Word Cloud</h5></a> 
       </nav>
       <nav>
           <a href="/extract_entity"><h5>Extract Entities</h5></a> 
