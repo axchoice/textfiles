@@ -13,8 +13,10 @@ import json
 from flask import Flask, request, session, g, redirect, url_for, abort, \
     render_template, flash, json, jsonify, Response
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS, cross_origin
 from flask import Flask
 app = Flask(__name__)
+CORS(app)
 api = Api(app)
 import sys
 
