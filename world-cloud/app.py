@@ -17,6 +17,7 @@ import base64
 #from urllib.parse import quote
  
 app = Flask(__name__)
+CORS(app)
 #api = Api(app)
 
 strTweet = ''
