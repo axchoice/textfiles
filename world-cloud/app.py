@@ -3,6 +3,7 @@
 
 from flask import Flask, send_file, request, make_response
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS, cross_origin
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
